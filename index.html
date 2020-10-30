@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a484224e5b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <title>Resevación de hotel III</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>NEW QUICK RESERVATION</h1>
+            <i class="fas fa-times"></i>
+        </header>
+        <hr />
+        <section>
+            <form>
+                <ul class="inputs-container">
+                    <li class="input-container single">
+                        <label for="adults">Adults</label>
+                        <select id="adults" name="adults">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </li>
+                    <li class="input-container single">
+                        <label for="children">children</label>
+                        <select id="children" name="children">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </li>
+                    <li class="input-container double">
+                        <label for="rateType">rate Type</label>
+                        <select id="rateType" name="rateType">
+                            <option value="rackRate">Rack Rate</option>
+                            <option value="rate1">Rate 1</option>
+                            <option value="rate2">Rate 2</option>
+                            <option value="rate3">Rate 3</option>
+                            <option value="rate4">Rate 4</option>
+                            <option value="rate5">Rate 5</option>
+                        </select>
+                    </li>
+                    <li class="input-container single">
+                        <label for="rooms">rooms</label>
+                        <select id="rooms" name="rooms">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </li>
+                    <li class="input-container single">
+                        <label for="title">title</label>
+                        <select id="title" name="title">
+                            <option value="mr">Mr.</option>
+                            <option value="mrs">Mrs.</option>
+                            <option value="ms">Ms.</option>
+                            <option value="miss">Miss</option>
+                            <option value="mx">Mx.</option>
+                        </select>
+                    </li>
+                    <li class="input-container double">
+                        <label for="firstName">first Name</label>
+                        <input type="text" id="firstName" name="firstName" value="Garret">
+                    </li>
+                    <li class="input-container double">
+                        <label for="lastName">last Name</label>
+                        <input type="text" id="lastName" name="lastName" value="Watson">
+                    </li>
+                    <li class="input-container double">
+                        <label for="email">Email adress</label>
+                        <input type="email" id="email" name="email" placeholder="Enter Email">
+                    </li>
+                    <li class="input-container double">
+                        <label for="phone">phone number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter Phone Number">
+                    </li>
+                </ul>
+                <p class="radio-container">
+                    <label for="single">
+                        <input type="radio" name="typeOfTravel" value="single">
+                        <span>Single</span>
+                    </label>
+                    <label for="group">
+                        <input type="radio" name="typeOfTravel" value="group0" checked>
+                        <span>Group</span>
+                    </label>
+                    <label for="business">
+                        <input type="radio" name="typeOfTravel" value="business">
+                        <span>Business</span>
+                    </label>
+                </p>
+            </form>
+            <aside>
+                <section>
+                    <h3>Room type</h3>
+                    <p>Deluxe</p>
+                </section>
+                <section>
+                    <h3>Duration</h3>
+                    <p>May 28 - Jun 2</p>
+                </section>
+                <section>
+                    <h3>Price</h3>
+                    <p>$42/night | Total $270</p>
+                </section>
+            </aside>
+        </section>
+        <hr />
+        <footer>
+            <button>Temp Reserve</button>
+            <button>Reserve</button>
+            <button>Check-In</button>
+        </footer>
+
+    </main>
+</body>
+</html>

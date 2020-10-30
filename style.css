@@ -1,0 +1,156 @@
+/* GENERALES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Muli', sans-serif;
+}
+:root{
+    --blue:#598de1;
+    --grey:#8b98a5;
+    --darkBlue:#2b3948;
+    --lightGrey:#d3dae0;
+}
+body{
+    background-color: #f7fcff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+main{
+    width: 65em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    padding: 2rem 3rem;
+    box-shadow: 0px 5px 20px rgba(141, 163, 214, 0.5);
+}
+/* GRANDES SECCIONES */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 2.5em;
+}
+section{
+    display: flex;
+}
+aside{
+    min-width: 15em;
+}
+aside, aside>section{
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+/* ESTILOS COMPARTIDOS */
+h1, aside>section>p{
+    color: var(--darkBlue);
+}
+h1, h3, label{
+    text-transform: uppercase;
+}
+h3, label, input::placeholder, span, i{
+    color: var(--grey);
+    opacity: 1;
+}
+/* HEADER */
+h1{
+    font-size: 1.1em;
+    text-align: center;
+    margin: auto;
+    font-weight: 700;
+}
+i{
+    font-size: 2em;
+}
+hr{
+    border:0.5px solid #f3f9fe;
+    margin-bottom: 2.5rem;
+}
+/* FORM */
+.inputs-container{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+}
+.double{
+    flex: 1 1 35%;
+    margin-right: 4%;
+}
+.double:nth-last-of-type(2), .double:last-of-type{
+    flex: 0 035%;
+    margin-bottom: 1em;
+}
+.single{
+    flex: 1 1 15%;
+    margin-right: 4%;
+}
+label, h3{
+    font-size: 0.772em;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+input, select{
+    border: 1px solid var(--lightGrey);
+    border-radius: 5px;
+    background-color: inherit;
+    padding: 0.6em 1em;
+    margin-bottom: 1.6em;
+    font-weight: 700;
+    font-size: 1.05em;
+}
+
+span, input::placeholder{
+    font-weight: 700;
+    text-transform: capitalize;
+}
+/* RADIOS */
+.radio-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+}
+.radio-container>label{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+}
+span{
+    font-size: 1.2em;
+    margin:0 1.1em 0 0.3em;
+}
+/* ASIDE */
+aside>section>p{
+    font-weight: 800;
+    font-size: 1.2em;
+}
+aside>section{
+    margin-bottom: 2em;
+    margin-left: 2rem;
+    color: var(--blue);
+}
+/* FOOTER */
+button{
+    border: none;
+    border-radius: 5px;
+    background-color: var(--blue);
+    color: #fff;
+    font-weight: 700;
+    width: 10em;
+    height: 3em;
+    margin: 0 1em;
+}
